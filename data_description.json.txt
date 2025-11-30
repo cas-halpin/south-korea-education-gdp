@@ -1,0 +1,40 @@
+﻿{
+  "dataset_name": "South Korea Primary Enrollment and GDP per Capita (2001-2020)",
+  "country": "Korea, Rep.",
+  "description": "Combined dataset of primary education enrollment counts and GDP per capita (current US$) for South Korea from 2001 to 2020.",
+  "source": {
+    "primary_enrollment": "World Bank / UN education dataset: API_SE.PRM.ENRL_DS2_en_csv_v2_4538564",
+    "gdp_per_capita": "World Bank World Development Indicators: WDIData.csv, indicator NY.GDP.PCAP.CD"
+  },
+  "columns": [
+    {
+      "name": "Row",
+      "type": "integer",
+      "description": "Zero-based index (0–19) identifying the row order in the dataset. This is a convenience index and not a substantive variable."
+    },
+    {
+      "name": "Year",
+      "type": "integer",
+      "description": "Calendar year of the observation, ranging from 2001 to 2020."
+    },
+    {
+      "name": "Primary Enrollment",
+      "type": "integer",
+      "description": "Total number of pupils enrolled in primary education in South Korea for the given year. Based on indicator SE.PRM.ENRL. Values may be missing (null) for years without reported data."
+    },
+    {
+      "name": "GDP",
+      "type": "number",
+      "description": "Gross Domestic Product per capita (current US$) for South Korea in the given year, based on indicator NY.GDP.PCAP.CD. Represents the value of all final goods and services produced within a country in a year divided by the midyear population, expressed in current U.S. dollars."
+    }
+  ],
+  "time_coverage": {
+    "start_year": 2001,
+    "end_year": 2020
+  },
+  "notes": [
+    "Some primary enrollment values may be null where data is not available for a specific year.",
+    "GDP values are expressed in current U.S. dollars (not adjusted for inflation).",
+    "The dataset is intended for educational use in data wrangling and database practice."
+  ]
+}
